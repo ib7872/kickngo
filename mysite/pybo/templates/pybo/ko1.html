@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    {% load static %}
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>KICKSTER</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" href="{% static 'css/jquery.fullPage.css' %}" >
+	<link rel="stylesheet" href="{% static 'css/examples.css' %}" >
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+    <style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+    
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous">
+    </script>
+
+	
+    <script src="{% static 'assets/vendors/scrolloverflow.js' %}"></script>
+    <script src="{% static 'js/jquery.fullPage.js' %}"></script>
+    <script src="{% static 'js/examples.js' %}"></script>
+    
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage'],
+				sectionsColor: ['#000000', '#000000', '#000000', '#ffffff'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third page', 'Last page'],
+				responsiveWidth: 350,
+				afterResponsive: function(isResponsive){
+					
+				}
+
+			});
+		});
+	</script>
+
+</head>
+<body id="page-top">
+       
+<div id="fullpage">
+	<div class="section" id="section0">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold mb-5"style="font-size:55px; color: white; font-family: 'Kungfont-Regular'">KICKSTER HEATED GRIP</h1>
+                        <!-- <hr class="divider" /> -->
+                        <img class="img-fluid" src="{% static 'assets/img/1.jpg' %}" alt="..." />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75">The best heated grip for you</p>
+                        <p class="text-white-75">"KICKSTER HEATED GRIP"</p>
+                    </div>
+                </div>
+            </div>
+	</div>
+    
+	<div class="section" id="section1">
+    <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0"style="font-size:40px;">Of course, </h2>
+                        <h2 class="text-white mt-0"style="font-size:40px;">both bicycles and kickscooter can be used</h2>
+                        <hr class="divider divider-light" />
+                        <p class="text-white-75 mb-4" style="font-size:25px;">Our kickster heating grip is practically designed for standard bike(diameter 22mm). </p>
+                        <p class="text-white-75 mb-4" style="font-size:25px;">If you put it on your bike and on the kickscooter, you can drive safely and warmly even in winter. </p>
+                        
+                        <img class="img-fluid" src="{% static 'assets/img/m1.jpg' %}" alt="..." />
+                    </div>
+                </div>
+            </div>
+    </div>            
+
+	<div class="section" id="section2">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0 text-white">Our Grip</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-gem fs-1 text-primary text-white"></i></div>
+                            <h3 class="h4 mb-2 text-white">·</h3>
+                            <p class="text-white mb-0" style="font-size:17px;">Very Comfortable!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-laptop fs-1 text-primary text-white"></i></div>
+                            <h3 class="h4 mb-2 text-white">·</h3>
+                            <p class="text-white mb-0" style="font-size:17px;">Very Warm!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-globe fs-1 text-primary text-white"></i></div>
+                            <h3 class="h4 mb-2 text-white">·</h3>
+                            <p class="text-white mb-0" style="font-size:17px;">Very Reasonable!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-heart fs-1 text-primary text-white"></i></div>
+                            <h3 class="h4 mb-2 text-white">·</h3>
+                            <p class="text-white mb-0" style="font-size:17px;">Very Smart!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div>
+            <br>
+        </div>
+          <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{% static 'assets/img/1.jpg' %}" title="KICKSTER">
+                            <img class="img-fluid" src="{% static 'assets/img/1.jpg' %}" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KICKSTER</div>
+                                <div class="project-name">A</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{% static 'assets/img/2.jpg' %}" title="KICKSTER">
+                            <img class="img-fluid" src="{% static 'assets/img/2.jpg' %}" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KICKSTER</div>
+                                <div class="project-name">B</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{% static 'assets/img/3.jpg' %}" title="KICKSTER">
+                            <img class="img-fluid" src="{% static 'assets/img/3.jpg' %}" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KICKSTER</div>
+                                <div class="project-name">C</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{% static 'assets/img/4.jpg' %}" title="KICKSTER">
+                            <img class="img-fluid" src="{% static 'assets/img/4.jpg' %}" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KICKSTER</div>
+                                <div class="project-name">D</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{% static 'assets/img/5.jpg' %}" title="KICKSTER">
+                            <img class="img-fluid" src="{% static 'assets/img/5.jpg' %}" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KICKSTER</div>
+                                <div class="project-name">E</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="{% static 'assets/img/6.jpg' %}" title="KICKSTER">
+                            <img class="img-fluid" src="{% static 'assets/img/6.jpg' %}" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">KICKSTER</div>
+                                <div class="project-name">F</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    <div class="section" id="section3">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="divider" />
+                        <p class="text-muted">If you have any questions,</p>
+                        <p class="text-muted mb-5">please let me know.</p>
+                    </div>
+                </div>
+ 
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-3 mb-lg-0">
+                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                        <div>+82 (10) 3214-7872</div>
+                        <div>AlwaysAwake@kakao.com</div>
+                        <br>
+                        <div class="small text-center text-muted">Copyright &copy; 2021 - KICKSTER</div>
+                </div>
+            </div>
+            
+                
+
+        </div>
+	</div>
+</div>
+
+
+</body>
+</html>
